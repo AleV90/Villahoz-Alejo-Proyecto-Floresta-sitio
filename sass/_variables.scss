@@ -2,3 +2,16 @@ $sizeParaTitulo: 20px;
 $color-titulos: rgba(21, 21, 21, 0.72);
 $bordesSecciones: 5px white solid;
 $gradiente-uno: linear-gradient(to right, black, grey); 
+
+@mixin crearBordes {
+    border: 10px solid black;
+    box-shadow: 0px 0px 5px white;
+    border-radius: 100%;
+}
+
+$estilos: (
+    color:rgb(240, 240, 240),
+    color2:rgba(82, 82, 82, 0.8),
+    sizefuente: 20px,
+    justificado: center,
+);
