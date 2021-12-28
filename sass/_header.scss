@@ -1,0 +1,39 @@
+@import "variables";
+
+#logo {
+    display: inline-block;
+    grid-area: logo;
+    justify-self: center;
+    align-self: center;
+    img{
+        border-radius: 100%;
+        border: 1px rgb(255, 255, 255) solid;
+        height: 150px;
+        width: 150px;
+    }
+}
+.header{
+    background-image: $gradiente-uno;
+    border-bottom: 5px black solid;
+    .header__redes__boton__hiper{
+        text-decoration: none;
+        color: white;
+        font-size: 50%;
+        list-style: none;
+    }
+    .header__nav{
+        align-self: center;
+        justify-self: center;
+    }
+    .header__nav__ul__boton__hiper{
+        color: rgb(255, 255, 255);
+        font-family: sans-serif;
+        font-weight: bold;
+        text-decoration: underline;
+        transition: all 1s;
+            &:hover{
+                color: rgba(247, 247, 236, 0.83);
+                text-shadow: 1px 10px 10px rgba(201, 197, 197, 0.671);
+            }
+        }
+    }

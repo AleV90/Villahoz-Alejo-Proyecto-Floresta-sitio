@@ -1,54 +1,57 @@
 @import "variables";
+@import "footer";
+@import "header";
 
 *{
     margin: 0px;
     padding: 0px;
     list-style-type: none;
 }
-#logo {
-    display: inline-block;
-    grid-area: logo;
-    justify-self: center;
-    align-self: center;
-    img{
-        border-radius: 100%;
-        border: 1px rgb(255, 255, 255) solid;
-        height: 150px;
-        width: 150px;
+
+//Estilos de pagina Home//
+.main{
+    background-color: white;
+    .main__titulo{
+        @include tituloPrincipal;
     }
-}
-.header{
-    background-image: $gradiente-uno;
-    border-bottom: 5px black solid;
-    .header__redes__boton__hiper{
-        text-decoration: none;
-        color: white;
-        font-size: 50%;
-        list-style: none;
-    }
-    .header__nav{
-        align-self: center;
-        justify-self: center;
-    }
-    .header__nav__ul__boton__hiper{
-        color: rgb(255, 255, 255);
-        font-family: sans-serif;
-        font-weight: bold;
-        text-decoration: underline;
-        transition: all 1s;
-            &:hover{
-                color: rgba(247, 247, 236, 0.83);
-                text-shadow: 1px 10px 10px rgba(201, 197, 197, 0.671);
-            }
-        }
-    }
-.titulo__historia{
-    text-align: map-get($map: $estilos, $key: justificado);
-    margin-top: 20px;
-    margin-bottom: 20px;
-    color: $color-titulos;
 }
 
+//Estilos de pagina Actividades//
+.actividades__titulo{
+    @include tituloPrincipal;
+    
+}
+.main-actividades{
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    .actividad__tarjeta{
+        border: 10px white solid;
+        padding: 5px;
+        img{
+            height: 300px;
+        }
+        .actividad-tarjeta__actividad{
+            color: white;
+            font-size: 32px;
+            align-self: center;
+            justify-self: center;
+        }
+        .actividad-tarjeta__descricion{
+            color: white;
+            font-size: 18px;
+        }
+    }
+}
+//Estilos pagina Restaurante //
+.main__restaurante{
+    color:white;
+}
+
+//Estilos pagina Historia //
+.titulo__historia{
+    @include tituloPrincipal;
+}
 .main__historia{
     background-color: map-get($map: $estilos, $key: color2 );
     border: 5px white solid;
@@ -94,37 +97,5 @@
         }
     }
 }
-.footer{
-    background-image: $gradiente-uno;
-    border-bottom: 5px black solid;
-    .footer__redes__ul{
-        
-        .footer__redes__ul_boton{
-            list-style-type: none;
-            font-size: 16px;
-            font-size: bold;
-            color: white;
-            &:hover{
-                text-shadow: 1px 10px 10px rgba(201, 197, 197, 0.671);
-                a{
-                    list-style-type: none;
-            font-size: 16px;
-            font-size: bold;
-            color: white;
-                }
-            }
-        }
-    }
-    .footer__contacto{
-        color: white;
-        font-weight: bold;
-        li{
-            text-align: right;
-        }
-    }
-    .footer__derechos{
-        text-align: center;
-        color: white;
-        font-weight: bold;
-    }
-}
+//Estilos pagina Contacto //
+

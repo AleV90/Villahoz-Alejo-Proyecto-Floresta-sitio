@@ -1,0 +1,36 @@
+@import "variables";
+
+.footer{
+    background-image: $gradiente-uno;
+    border-bottom: 5px black solid;
+    .footer__redes__ul{
+        
+        .footer__redes__ul_boton{
+            list-style-type: none;
+            font-size: 16px;
+            font-size: bold;
+            color: white;
+            &:hover{
+                text-shadow: 1px 10px 10px rgba(201, 197, 197, 0.671);
+                a{
+                    list-style-type: none;
+            font-size: 16px;
+            font-size: bold;
+            color: white;
+                }
+            }
+        }
+    }
+    .footer__contacto{
+        color: white;
+        font-weight: bold;
+        li{
+            text-align: right;
+        }
+    }
+    .footer__derechos{
+        text-align: center;
+        color: white;
+        font-weight: bold;
+    }
+}
