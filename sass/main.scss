@@ -99,3 +99,37 @@
 }
 //Estilos pagina Contacto //
 
+.titulo__contacto{
+    @include tituloPrincipal;
+}
+.main__contacto{
+    align-items: center;
+    justify-content: space-between;
+    .formulario{
+        background-image: $gradiente-uno;
+        .titulo__formulario{
+            color: white;
+            font-weight: bold;
+        }
+        label{
+            @extend .titulo__formulario;
+        }
+        .formulario__botones{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            .formulario__boton{
+            background-color: grey;
+            color: white;
+            align-self: center;
+            justify-self: center;
+            }
+        
+        }
+    }
+    .donde-estamos{
+        .titulo__mapa{
+            text-align: center;
+        }
+    }
+}

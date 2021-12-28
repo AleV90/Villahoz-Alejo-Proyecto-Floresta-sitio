@@ -7,22 +7,24 @@
   font-size: 16px;
   font-size: bold;
   color: white;
+  transition: all 1s;
 }
-.footer .footer__redes__ul .footer__redes__ul_boton:hover {
-  text-shadow: 1px 10px 10px rgba(201, 197, 197, 0.671);
-}
-.footer .footer__redes__ul .footer__redes__ul_boton:hover a {
+.footer .footer__redes__ul .footer__redes__ul_boton a {
   list-style-type: none;
   font-size: 16px;
   font-size: bold;
   color: white;
+  transition: all 1s;
+}
+.footer .footer__redes__ul .footer__redes__ul_boton a:hover {
+  text-shadow: 1px 10px 10px rgba(201, 197, 197, 0.671);
 }
 .footer .footer__contacto {
   color: white;
   font-weight: bold;
 }
 .footer .footer__contacto li {
-  text-align: right;
+  text-align: justify;
 }
 .footer .footer__derechos {
   text-align: center;
@@ -33,14 +35,12 @@
 #logo {
   display: inline-block;
   grid-area: logo;
-  justify-self: center;
-  align-self: center;
 }
 #logo img {
   border-radius: 100%;
   border: 1px white solid;
-  height: 150px;
-  width: 150px;
+  height: 100%;
+  width: 100%;
 }
 
 .header {
@@ -50,7 +50,7 @@
 .header .header__redes__boton__hiper {
   text-decoration: none;
   color: white;
-  font-size: 50%;
+  font-size: 75%;
   list-style: none;
 }
 .header .header__nav {
@@ -67,6 +67,13 @@
 .header .header__nav__ul__boton__hiper:hover {
   color: rgba(247, 247, 236, 0.83);
   text-shadow: 1px 10px 10px rgba(201, 197, 197, 0.671);
+}
+
+.collapse {
+  justify-content: space-around;
+}
+.collapse .navbar-nav {
+  justify-content: space-between;
 }
 
 * {
@@ -176,6 +183,43 @@
 }
 .main__historia .section__historia .section__historia__article2 div {
   background-color: rgba(82, 82, 82, 0.8);
+}
+.titulo__contacto {
+  font-size: 36px;
+  text-shadow: 0px 5px 10px black;
+  font-family: sans-serif;
+  font-weight: bold;
+  text-align: center;
+  text-justify: auto;
+  color: #525252;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.main__contacto {
+  align-items: center;
+  justify-content: space-between;
+}
+.main__contacto .formulario {
+  background-image: linear-gradient(to right, black, grey);
+}
+.main__contacto .formulario .titulo__formulario, .main__contacto .formulario label {
+  color: white;
+  font-weight: bold;
+}
+.main__contacto .formulario .formulario__botones {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.main__contacto .formulario .formulario__botones .formulario__boton {
+  background-color: grey;
+  color: white;
+  align-self: center;
+  justify-self: center;
+}
+.main__contacto .donde-estamos .titulo__mapa {
+  text-align: center;
 }
 
 /*# sourceMappingURL=main.css.map */

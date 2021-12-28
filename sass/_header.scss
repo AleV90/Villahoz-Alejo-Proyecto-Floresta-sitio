@@ -3,13 +3,11 @@
 #logo {
     display: inline-block;
     grid-area: logo;
-    justify-self: center;
-    align-self: center;
     img{
         border-radius: 100%;
         border: 1px rgb(255, 255, 255) solid;
-        height: 150px;
-        width: 150px;
+        height: 100%;
+        width: 100%;
     }
 }
 .header{
@@ -18,7 +16,7 @@
     .header__redes__boton__hiper{
         text-decoration: none;
         color: white;
-        font-size: 50%;
+        font-size: 75%;
         list-style: none;
     }
     .header__nav{
@@ -36,4 +34,11 @@
                 text-shadow: 1px 10px 10px rgba(201, 197, 197, 0.671);
             }
         }
+        
     }
+    .collapse{
+            justify-content: space-around;
+            .navbar-nav{
+                justify-content: space-between;
+            }
+        }

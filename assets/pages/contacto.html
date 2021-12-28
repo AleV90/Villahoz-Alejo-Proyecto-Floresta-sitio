@@ -14,23 +14,40 @@
 <body class="body__contacto">
 
     <!-- Comienzo del Header -->
-    <header class="header">
-        <div class="container_fluid">
+    <header class="header container-fluid">
+        <div class="container-fluid">
             <div class="row">
-                <div id="logo" class="col-sm-3 col-md-3 col-lg-3 col-xl-3 col-xxl-3 h-100">
+                <div id="logo" class="col-sm-2 col-md-2 col-lg-2 col-xl-2 col-xxl-2 h-100">
                     <img src="../Img/logoclub.png" class="img-fluid" alt="...">
                 </div>
-                <nav class="header__nav col-sm-7 col-md-7 col-lg-7 col-xl-7 col-xxl-7 align-self-end">
-                    <ul class="header__nav__ul d-flex flex-row justify-content-between h-100 d">
-                        <li class="header__nav__ul__boton"><a href="../../index.html" class="header__nav__ul__boton__hiper">Home</a></li>
-                        <li class="header__nav__ul__boton"><a href="actividades.html" class="header__nav__ul__boton__hiper">Actividades</a></li>
-                        <li class="header__nav__ul__boton"><a href="restaurante.html" class="header__nav__ul__boton__hiper">Restaurant</a></li>
-                        <li class="header__nav__ul__boton"><a href="historia.html" class="header__nav__ul__boton__hiper">Historia</a></li>
-                        <li class="header__nav__ul__boton"><a href="contacto.html" class="header__nav__ul__boton__hiper">Contacto</a></li>
-                    </ul>
-                </nav>    
-                <div class="header__redes col-sm-2 col-md-2 col-lg-2 col-xl-2 col-xxl-2 d-flex flex-row justify-content-between">
-                    <ul class="d-flex flex-row">
+                <nav class="header__nav navbar navbar-expand-md navbar-light opacity-10 col-6 col-sm-8 col-md-8 col-lg-8 col-xl-8 col-xxl-8">
+                    <div class="container-fluid">
+                        <button class="navbar-toggler text-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon bg-light"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                            <ul class="navbar-nav">
+                            <li class="header__nav__ul__boton nav-item">
+                                <a class="nav-link h4 text-light text-wrap"  href="../../index.html">Home</a>
+                            </li>
+                            <li class="header__nav__ul__boton nav-item">
+                                <a class="nav-link h4 text-light text-wrap" href="actividades.html">Actividades</a>
+                            </li>
+                            <li class="header__nav__ul__boton nav-item">
+                                <a class="nav-link h4 text-light text-wrap" href="restaurante.html">Restauante</a>
+                            </li>
+                            <li class="header__nav__ul__boton nav-item">
+                                <a class="nav-link h4 text-light text-wrap" href="historia.html">Historia</a>
+                            </li>
+                            <li class="header__nav__ul__boton nav-item">
+                                <a class="nav-link h4 text-light text-wrap" href="contacto.html">Contacto</a>
+                            </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>   
+                <div class="header__redes col-6 col-sm-2 col-md-2 col-lg-2 col-xl-2 col-xxl-2 d-flex flex-column justify-content-between">
+                    <ul class="d-flex flex-column">
                         <li class="header__redes__boton"><a href="#" class="header__redes__boton__hiper">E-mail</a></li>
                         <li class="header__redes__boton"><a href="#" class="header__redes__boton__hiper">Facebook</a></li>
                         <li class="header__redes__boton"><a href="#" class="header__redes__boton__hiper">Instagram</a></li>
@@ -42,34 +59,34 @@
     </header>
     <!-- Fin del Header -->
 
-    <h1 class="titulo__contacto">Contacto</h1>
+    <h1 class="titulo__contacto col-12">Contacto</h1>
 
     <!-- Comienzo del Main Contacto -->
-    <main class="main__contacto">
-        <form class="formulario" action="datos.php" method="post" name="cantacto"> 
-            <h2 class="titulo__formulario">Completá el formulario y te contestamos lo antes posible</h2>
+    <main class="main__contacto container-fluid row ">
+        <form class="formulario col-12 col-sm-12 col-md-5 col-xl-5 col-xxl-5" action="datos.php" method="post" name="cantacto"> 
+            <h2 class="titulo__formulario col-12">Completá el formulario y te contestamos lo antes posible</h2>
             <label for="nombre">Nombre</label>
-            <input class="imput" type="text" name="nombre" placeholder="Escriba su nombre" required>
+            <input class="imput col-12" type="text" name="nombre" placeholder="Escriba su nombre" required>
             <label for="apellido">Apellido</label>
-            <input class="imput" type="text" name="apellido" placeholder="Escriba su apellido" required>
+            <input class="imput col-12" type="text" name="apellido" placeholder="Escriba su apellido" required>
             <label for="email">E-Mail</label>
-            <input class="imput" type="email" name="email" placeholder="Escriba su E-mail" required>
-            <div class="formulario__radio">
+            <input class="imput col-12" type="email" name="email" placeholder="Escriba su E-mail" required>
+            <div class="formulario__radio col-12 ">
                 <label for="sexo">Hombre</label>
                 <input class="imput__radio" type="radio" name="sexo" value="Hombre">
                 <label for="sexo">Mujer</label>
                 <input class="imput__radio" type="radio" name="sexo" value="Mujer">
             </div>
             <label for="mensaje">Escriba aquí su mensaje</label>
-            <textarea class="imput--modif" name="mensaje" placeholder="Escriba aquí su mensaje" cols="30" rows="10" required></textarea>
+            <textarea class="imput--modif col-12" name="mensaje" placeholder="Escriba aquí su mensaje" cols="30" rows="10" required></textarea>
             <div class="formulario__botones">
-                <input class="formulario__botones" type="submit" value="Submit">
-                <input class="formulario__botones" type="reset" value="Reset">
+                <input class="formulario__boton" type="submit" value="Submit">
+                <input class="formulario__boton" type="reset" value="Reset">
             </div>
         </form>
-        <div class="donde-estamos">
-            <h3 class="titulo__mapa">¿Dónde nos encontramos?</h3>
-            <iframe class="mapa border" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.006965502472!2d-58.485704185051475!3d-34.6292642663568!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc995a91072bb%3A0x84c1f03ea47646c7!2sClub%20Familiar%20%22La%20Floresta%22!5e0!3m2!1ses-419!2sar!4v1636492986904!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        <div class="donde-estamos col-12 col-sm-12 col-md-6 col-xl-6 col-xxl-6">
+            <h3 class="titulo__mapa ">¿Dónde nos encontramos?</h3>
+            <iframe class="mapa border col-11" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.006965502472!2d-58.485704185051475!3d-34.6292642663568!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc995a91072bb%3A0x84c1f03ea47646c7!2sClub%20Familiar%20%22La%20Floresta%22!5e0!3m2!1ses-419!2sar!4v1636492986904!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
         </div>
     </main>
     <!-- Fin del Main Contacto -->
