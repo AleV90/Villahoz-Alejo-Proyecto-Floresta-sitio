@@ -2,7 +2,6 @@
 
 #logo {
     display: inline-block;
-    grid-area: logo;
     img{
         border-radius: 100%;
         border: 1px rgb(255, 255, 255) solid;
@@ -11,6 +10,10 @@
     }
 }
 .header{
+    display: flex;
+    .header__redes{
+        justify-content: flex-end;
+    }
     background-image: $gradiente-uno;
     border-bottom: 5px black solid;
     .header__redes__boton__hiper{
@@ -22,20 +25,19 @@
     .header__nav{
         align-self: center;
         justify-self: center;
-    }
-    .header__nav__ul__boton__hiper{
+        .header__nav__a{
         color: rgb(255, 255, 255);
         font-family: sans-serif;
         font-weight: bold;
-        text-decoration: underline;
-        transition: all 1s;
-            &:hover{
+        transition: 1s all;
+        & :hover {
                 color: rgba(247, 247, 236, 0.83);
-                text-shadow: 1px 10px 10px rgba(201, 197, 197, 0.671);
+                background-color: rgba(112, 110, 110, 0.822);
+                text-shadow: 0px 0px 10px white;
             }
         }
-        
     }
+}
     .collapse{
             justify-content: space-around;
             .navbar-nav{

@@ -34,7 +34,6 @@
 
 #logo {
   display: inline-block;
-  grid-area: logo;
 }
 #logo img {
   border-radius: 100%;
@@ -44,8 +43,12 @@
 }
 
 .header {
+  display: flex;
   background-image: linear-gradient(to right, black, grey);
   border-bottom: 5px black solid;
+}
+.header .header__redes {
+  justify-content: flex-end;
 }
 .header .header__redes__boton__hiper {
   text-decoration: none;
@@ -57,16 +60,16 @@
   align-self: center;
   justify-self: center;
 }
-.header .header__nav__ul__boton__hiper {
+.header .header__nav .header__nav__a {
   color: white;
   font-family: sans-serif;
   font-weight: bold;
-  text-decoration: underline;
-  transition: all 1s;
+  transition: 1s all;
 }
-.header .header__nav__ul__boton__hiper:hover {
+.header .header__nav .header__nav__a :hover {
   color: rgba(247, 247, 236, 0.83);
-  text-shadow: 1px 10px 10px rgba(201, 197, 197, 0.671);
+  background-color: rgba(112, 110, 110, 0.822);
+  text-shadow: 0px 0px 10px white;
 }
 
 .collapse {
@@ -79,14 +82,12 @@
 * {
   margin: 0px;
   padding: 0px;
+  box-sizing: border-box;
   list-style-type: none;
 }
 
-.main {
-  background-color: white;
-}
-.main .main__titulo {
-  font-size: 36px;
+.main__titulo {
+  font-size: 32px;
   text-shadow: 0px 5px 10px black;
   font-family: sans-serif;
   font-weight: bold;
@@ -97,8 +98,12 @@
   margin-bottom: 20px;
 }
 
+.main {
+  background-color: white;
+}
+
 .actividades__titulo {
-  font-size: 36px;
+  font-size: 32px;
   text-shadow: 0px 5px 10px black;
   font-family: sans-serif;
   font-weight: bold;
@@ -124,12 +129,15 @@
 .main-actividades .actividad__tarjeta .actividad-tarjeta__actividad {
   color: white;
   font-size: 32px;
-  align-self: center;
-  justify-self: center;
+  text-align: center;
+  margin: auto auto;
 }
 .main-actividades .actividad__tarjeta .actividad-tarjeta__descricion {
   color: white;
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
   font-size: 18px;
+  border: 1px white solid;
+  margin-bottom: 3px 0px;
 }
 
 .main__restaurante {
@@ -137,7 +145,7 @@
 }
 
 .titulo__historia {
-  font-size: 36px;
+  font-size: 32px;
   text-shadow: 0px 5px 10px black;
   font-family: sans-serif;
   font-weight: bold;
@@ -160,7 +168,7 @@
   font-size: 18px;
   font-weight: bold;
   color: white;
-  font-family: "Times New Roman", Times, serif;
+  font-family: "Roboto", "Times New Roman", Times, serif;
   text-align: justify;
   height: 500px;
   overflow-y: scroll;
@@ -170,7 +178,7 @@
 }
 .main__historia .section__historia .section__historia__article1 div .section__historia__titulo1, .main__historia .section__historia .section__historia__article2 div .section__historia__titulo1, .main__historia .section__historia .section__historia__article2 div .section__historia__titulo2 {
   color: rgba(21, 21, 21, 0.72);
-  font-size: 46px;
+  font-size: 35px;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: bold;
   align-self: center;
@@ -179,13 +187,12 @@
   background-color: #f0f0f0;
   border: 10px solid black;
   box-shadow: 0px 0px 5px white;
-  border-radius: 100%;
 }
 .main__historia .section__historia .section__historia__article2 div {
   background-color: rgba(82, 82, 82, 0.8);
 }
 .titulo__contacto {
-  font-size: 36px;
+  font-size: 32px;
   text-shadow: 0px 5px 10px black;
   font-family: sans-serif;
   font-weight: bold;

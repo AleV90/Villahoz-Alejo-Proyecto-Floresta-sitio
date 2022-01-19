@@ -6,11 +6,10 @@ $gradiente-uno: linear-gradient(to right, black, grey);
 @mixin crearBordes {
     border: 10px solid black;
     box-shadow: 0px 0px 5px white;
-    border-radius: 100%;
 }
 
 @mixin tituloPrincipal {
-    font-size: 36px;
+    font-size: 32px;
     text-shadow: 0px 5px 10px black;
     font-family: sans-serif;
     font-weight: bold;
@@ -19,8 +18,7 @@ $gradiente-uno: linear-gradient(to right, black, grey);
     color: rgb(82, 82, 82);
     margin-top: 20px;
     margin-bottom: 20px;
-}
-
+} 
 $estilos: (
     color:rgb(240, 240, 240),
     color2:rgba(82, 82, 82, 0.8),
