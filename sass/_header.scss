@@ -7,6 +7,19 @@
         border: 1px rgb(255, 255, 255) solid;
         height: 100%;
         width: 100%;
+        animation: animacionLogo 5s;
+        animation-iteration-count: infinite;
+        @keyframes animacionLogo {
+            0%{
+                transform: translateY(0%);
+            }
+            50%{
+                transform: translateY(20%);
+            }
+            100%{
+                transform: translateY(-20%);
+            }
+        }        
     }
 }
 .header{
@@ -21,6 +34,10 @@
         color: white;
         font-size: 75%;
         list-style: none;
+        &:hover{
+            color: blue;
+            font-size: 100%;
+        }
     }
     .header__nav{
         align-self: center;
@@ -29,11 +46,10 @@
         color: rgb(255, 255, 255);
         font-family: sans-serif;
         font-weight: bold;
-        transition: 1s all;
-        & :hover {
-                color: rgba(247, 247, 236, 0.83);
-                background-color: rgba(112, 110, 110, 0.822);
-                text-shadow: 0px 0px 10px white;
+        transition: 800ms all;
+        &:hover {
+            text-shadow: 0px 0px 15px white;
+            text-decoration: underline;
             }
         }
     }

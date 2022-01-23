@@ -40,6 +40,19 @@
   border: 1px white solid;
   height: 100%;
   width: 100%;
+  animation: animacionLogo 5s;
+  animation-iteration-count: infinite;
+}
+@keyframes animacionLogo {
+  0% {
+    transform: translateY(0%);
+  }
+  50% {
+    transform: translateY(20%);
+  }
+  100% {
+    transform: translateY(-20%);
+  }
 }
 
 .header {
@@ -56,6 +69,10 @@
   font-size: 75%;
   list-style: none;
 }
+.header .header__redes__boton__hiper:hover {
+  color: blue;
+  font-size: 100%;
+}
 .header .header__nav {
   align-self: center;
   justify-self: center;
@@ -64,12 +81,11 @@
   color: white;
   font-family: sans-serif;
   font-weight: bold;
-  transition: 1s all;
+  transition: 800ms all;
 }
-.header .header__nav .header__nav__a :hover {
-  color: rgba(247, 247, 236, 0.83);
-  background-color: rgba(112, 110, 110, 0.822);
-  text-shadow: 0px 0px 10px white;
+.header .header__nav .header__nav__a:hover {
+  text-shadow: 0px 0px 15px white;
+  text-decoration: underline;
 }
 
 .collapse {
@@ -87,15 +103,16 @@
 }
 
 .main__titulo {
+  background-color: black;
   font-size: 32px;
-  text-shadow: 0px 5px 10px black;
+  text-shadow: 0px 0px 1px #f1ebeb, 0px 0px 2px #d8d3d3, 0px 0px 3px #545151;
   font-family: sans-serif;
   font-weight: bold;
   text-align: center;
   text-justify: auto;
-  color: #525252;
-  margin-top: 20px;
+  color: white;
   margin-bottom: 20px;
+  animation: AnimacionParaTitulo;
 }
 
 .main {
@@ -103,14 +120,14 @@
 }
 
 .actividades__titulo {
+  background-color: black;
   font-size: 32px;
-  text-shadow: 0px 5px 10px black;
+  text-shadow: 0px 0px 1px #f1ebeb, 0px 0px 2px #d8d3d3, 0px 0px 3px #545151;
   font-family: sans-serif;
   font-weight: bold;
   text-align: center;
   text-justify: auto;
-  color: #525252;
-  margin-top: 20px;
+  color: white;
   margin-bottom: 20px;
 }
 
@@ -123,7 +140,7 @@
   border: 10px white solid;
   padding: 5px;
 }
-.main-actividades .actividad__tarjeta img {
+.main-actividades .actividad__tarjeta .actividad-tarjeta__img {
   height: 300px;
 }
 .main-actividades .actividad__tarjeta .actividad-tarjeta__actividad {
@@ -131,12 +148,18 @@
   font-size: 32px;
   text-align: center;
   margin: auto auto;
+  transition: all 800ms;
+}
+.main-actividades .actividad__tarjeta .actividad-tarjeta__actividad:hover {
+  text-shadow: 0px 0px 10px white;
 }
 .main-actividades .actividad__tarjeta .actividad-tarjeta__descricion {
   color: white;
   font-family: "Roboto", Arial, Helvetica, sans-serif;
   font-size: 18px;
   border: 1px white solid;
+  padding: 3px;
+  text-align: justify;
   margin-bottom: 3px 0px;
 }
 
@@ -145,14 +168,14 @@
 }
 
 .titulo__historia {
+  background-color: black;
   font-size: 32px;
-  text-shadow: 0px 5px 10px black;
+  text-shadow: 0px 0px 1px #f1ebeb, 0px 0px 2px #d8d3d3, 0px 0px 3px #545151;
   font-family: sans-serif;
   font-weight: bold;
   text-align: center;
   text-justify: auto;
-  color: #525252;
-  margin-top: 20px;
+  color: white;
   margin-bottom: 20px;
 }
 
@@ -192,14 +215,14 @@
   background-color: rgba(82, 82, 82, 0.8);
 }
 .titulo__contacto {
+  background-color: black;
   font-size: 32px;
-  text-shadow: 0px 5px 10px black;
+  text-shadow: 0px 0px 1px #f1ebeb, 0px 0px 2px #d8d3d3, 0px 0px 3px #545151;
   font-family: sans-serif;
   font-weight: bold;
   text-align: center;
   text-justify: auto;
-  color: #525252;
-  margin-top: 20px;
+  color: white;
   margin-bottom: 20px;
 }
 
