@@ -40,18 +40,16 @@
   border: 1px white solid;
   height: 100%;
   width: 100%;
-  animation: animacionLogo 5s;
+  animation: animacionLogo 2s;
   animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
 }
 @keyframes animacionLogo {
   0% {
     transform: translateY(0%);
   }
-  50% {
-    transform: translateY(20%);
-  }
   100% {
-    transform: translateY(-20%);
+    transform: translateY(10%);
   }
 }
 
